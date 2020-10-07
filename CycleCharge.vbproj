@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95B6B64C-47C9-4384-BE34-162E4291F71F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CycleCharge</RootNamespace>
+    <AssemblyName>CycleCharge</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CycleCharge.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>
+    </DefineConstants>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CycleCharge.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DefineConstants>
+    </DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>EmulatorT340=True</DefineConstants>
+    <DocumentationFile>CycleCharge.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>EmulatorT340=False</DefineConstants>
+    <DocumentationFile>CycleCharge.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseForm, Version=1.0.4849.16252, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BaseForm\BaseForm\bin\Release\BaseForm.dll</HintPath>
+    </Reference>
+    <Reference Include="MathematicalLibrary">
+      <HintPath>..\..\MathematicalLibrary\MathematicalLibrary\bin\Release\MathematicalLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MDIWindowManager, Version=2.1.6178.18826, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CodePlex\mdiwinman-99885\MDIWindowManager\MDIWindowManager\bin\Release\MDIWindowManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="NationalInstruments.Analysis.Enterprise, Version=19.0.45.49152, Culture=neutral, PublicKeyToken=4febd62461bf11a4, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NationalInstruments.Common, Version=19.0.40.49152, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NationalInstruments.DAQmx, Version=19.0.45.2, Culture=neutral, PublicKeyToken=4febd62461bf11a4, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NationalInstruments.UI, Version=19.0.45.49154, Culture=neutral, PublicKeyToken=4febd62461bf11a4, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NationalInstruments.UI.WindowsForms, Version=19.0.45.49154, Culture=neutral, PublicKeyToken=4febd62461bf11a4, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\Registration\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CycleCharge" />
+    <Import Include="CycleCharge.My" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAttributeControls\Attribute.vb" />
+    <Compile Include="AddAttributeControls\CreatorAggregateAttributesControl.vb" />
+    <Compile Include="AddAttributeControls\BaseCreatorAttributesControl.vb" />
+    <Compile Include="AddAttributeControls\CreatorPowerAttributesControl.vb" />
+    <Compile Include="AddAttributeControls\PowerAttributesControl.Designer.vb">
+      <DependentUpon>PowerAttributesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddAttributeControls\PowerAttributesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddAttributeControls\AggregateAttributesControl.Designer.vb">
+      <DependentUpon>AggregateAttributesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddAttributeControls\AggregateAttributesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddAttributeControls\BaseAttributesControl.Designer.vb">
+      <DependentUpon>BaseAttributesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddAttributeControls\BaseAttributesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calculation\CalculatedParameters.vb" />
+    <Compile Include="Calculation\ClassCalculation.vb" />
+    <Compile Include="CycleDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CycleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DigitalWriter.vb" />
+    <Compile Include="Device\DirectoryNodeAggregate.vb" />
+    <Compile Include="Device\SystemDevices.vb" />
+    <Compile Include="EditorCyclogram\ChargeValueToText.vb" />
+    <Compile Include="ManagerChargeParameters\BaseLineControl.Designer.vb">
+      <DependentUpon>BaseLineControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerChargeParameters\BaseLineControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerChargeParameters\Device.vb" />
+    <Compile Include="ManagerChargeParameters\PortLine.vb" />
+    <Compile Include="ManagerChargeParameters\Devices.vb" />
+    <Compile Include="ManagerChargeParameters\Line.vb" />
+    <Compile Include="ManagerChargeParameters\LedControl.Designer.vb">
+      <DependentUpon>LedControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerChargeParameters\LedControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerChargeParameters\Port.vb" />
+    <Compile Include="ManagerChargeParameters\SwitchControl.Designer.vb">
+      <DependentUpon>SwitchControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerChargeParameters\SwitchControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerChargeParameters\ConfigurationDevices.Designer.vb">
+      <DependentUpon>ConfigurationDevices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerChargeParameters\ConfigurationDevices.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDI\CreatorEditorCyclogram.vb" />
+    <Compile Include="MDI\CreatorMdiChildrenWindow.vb" />
+    <Compile Include="MDI\CreatorEditorPower.vb" />
+    <Compile Include="MDI\CreatorPlayerCyclogram.vb" />
+    <Compile Include="MDI\FormChildAux.Designer.vb">
+      <DependentUpon>FormChildAux.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI\FormChildAux.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\BaseStackStrip.Designer.vb">
+      <DependentUpon>BaseStackStrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\BaseStackStrip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\BaseStripButton.Designer.vb">
+      <DependentUpon>BaseStripButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\BaseStripButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\DbListView.designer.vb">
+      <DependentUpon>DbListView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\DbListView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\HeaderStrip.Designer.vb">
+      <DependentUpon>HeaderStrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\HeaderStrip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\listviewEx.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ModuleControlNumericCycle.Designer.vb">
+      <DependentUpon>ModuleControlNumericCycle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ModuleControlNumericCycle.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\NativeInterop.vb" />
+    <Compile Include="Custom Controls\StackStrip.Designer.vb">
+      <DependentUpon>StackStrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\StackStrip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ToolStripDoudble.Designer.vb">
+      <DependentUpon>ToolStripDoudble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ToolStripDoudble.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ToolStripNumeric.Designer.vb">
+      <DependentUpon>ToolStripNumeric.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ToolStripNumeric.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\UserControlCycle.Designer.vb">
+      <DependentUpon>UserControlCycle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\UserControlCycle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\UserControlDouble.Designer.vb">
+      <DependentUpon>UserControlDouble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\UserControlDouble.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\UserControlNumeric.Designer.vb">
+      <DependentUpon>UserControlNumeric.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\UserControlNumeric.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditorCyclogram\FormEditorCyclogram.Designer.vb">
+      <DependentUpon>FormEditorCyclogram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditorCyclogram\FormEditorCyclogram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorCyclogram\FormHelpGraph.Designer.vb">
+      <DependentUpon>FormHelpGraph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditorCyclogram\FormHelpGraph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI\FormWindowsManager.vb" />
+    <Compile Include="FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\FormEditorPower.Designer.vb">
+      <DependentUpon>FormEditorPower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Device\FormEditorPower.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVariable.vb" />
+    <Compile Include="Calculation\InputParameters.vb" />
+    <Compile Include="ManagerChargeParameters\ChargeParameters.vb" />
+    <Compile Include="ManagerChargeParameters\ChargeParameter.vb" />
+    <Compile Include="MDI\IMdiChildrenWindow.vb" />
+    <Compile Include="MDI\WorkWithEnum.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NativeMethods.vb" />
+    <Compile Include="Calculation\TuningParameters.vb" />
+    <Compile Include="PlayerCyclogram\Aggregates.vb" />
+    <Compile Include="PlayerCyclogram\DigitalSingleChannelWriters.vb" />
+    <Compile Include="PlayerCyclogram\PortlWriter.vb" />
+    <Compile Include="PlayerCyclogram\LedPort.vb" />
+    <Compile Include="PlayerCyclogram\AggregateCycle.vb" />
+    <Compile Include="PlayerCyclogram\FormPlayerCyclogram.designer.vb">
+      <DependentUpon>FormPlayerCyclogram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerCyclogram\FormPlayerCyclogram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerCyclogram\PortWriters.vb" />
+    <Compile Include="PlayerCyclogram\AttributesChargeParameter.vb" />
+    <Compile Include="PlayerCyclogram\StagePower.vb" />
+    <Compile Include="ReadWriteIni.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddAttributeControls\PowerAttributesControl.resx">
+      <DependentUpon>PowerAttributesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAttributeControls\AggregateAttributesControl.resx">
+      <DependentUpon>AggregateAttributesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAttributeControls\BaseAttributesControl.resx">
+      <DependentUpon>BaseAttributesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerChargeParameters\BaseLineControl.resx">
+      <DependentUpon>BaseLineControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerChargeParameters\LedControl.resx">
+      <DependentUpon>LedControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerChargeParameters\SwitchControl.resx">
+      <DependentUpon>SwitchControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerChargeParameters\ConfigurationDevices.resx">
+      <DependentUpon>ConfigurationDevices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI\FormChildAux.resx">
+      <DependentUpon>FormChildAux.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\UserControlCycle.resx">
+      <DependentUpon>UserControlCycle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\UserControlDouble.resx">
+      <DependentUpon>UserControlDouble.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\UserControlNumeric.resx">
+      <DependentUpon>UserControlNumeric.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorCyclogram\FormEditorCyclogram.resx">
+      <DependentUpon>FormEditorCyclogram.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorCyclogram\FormHelpGraph.resx">
+      <DependentUpon>FormHelpGraph.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\FormEditorPower.resx">
+      <DependentUpon>FormEditorPower.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerCyclogram\FormPlayerCyclogram.resx">
+      <DependentUpon>FormPlayerCyclogram.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="CycleDataSet.xsc">
+      <DependentUpon>CycleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CycleDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CycleDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CycleDataSet.xss">
+      <DependentUpon>CycleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1385_Disable_16x16_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_Double.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_Single.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\command_link_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\command_link_16x1611.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1385_Disable_16x16_7211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drafts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filesave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder24.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ledCornerGray.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ledCornerGreen.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ledCornerOrange.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ledCornerRed.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Measurement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewFolder.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewMeetingRequest.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewSearchFolder.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewTask.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Outbox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Outlook.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OutlookToday.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintPreview.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Read.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\revert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rule.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Send.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sent.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\command_link_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1385_Disable_16x16_722.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SyncError.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TaskRequest.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tasks24.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recycled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kexi_kexi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unknown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xine1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Длит.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Кусочная.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Меандр.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Пила.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Сдат.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Синусоидальная.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Точечная.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Трапецеидальная.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\localtreeview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TreeCycleClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TreeviewOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TreeviewClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HideLeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowLeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleImage3.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleImage1.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleImage2.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HidePowers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowPowers.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(AssemblyName).dll" "D:\Project\Registration_VS2019\Registration\bin\x86\Release\Store\МодулиРасчета" /Y 
+xcopy "$(AssemblyName).pdb" "D:\Project\Registration_VS2019\Registration\bin\x86\Release\Store\МодулиРасчета" /Y
+xcopy "$(AssemblyName).dll" "D:\Project\Registration_VS2019\Registration\bin\x86\Debug\Store\МодулиРасчета" /Y 
+xcopy "$(AssemblyName).pdb" "D:\Project\Registration_VS2019\Registration\bin\x86\Debug\Store\МодулиРасчета" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
